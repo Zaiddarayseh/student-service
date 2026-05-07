@@ -81,10 +81,11 @@ public class StudentController {
 
         return studentService.StudentsWithTeacherId(id);
     }
-    /*@PostMapping("/send")
+
+    @PostMapping("/send")
     public void send(@RequestBody StudentCreateRequest student) {
 
         studentProducer.sendMessage(student);
-    }*/
+    }
 
 }

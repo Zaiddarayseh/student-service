@@ -1,4 +1,4 @@
-/*
+
 package com.student.management.service;
 
 import com.student.management.model.request.StudentCreateRequest;
@@ -15,4 +15,3 @@ public class StudentConsumer {
     }
 
 }
-*/

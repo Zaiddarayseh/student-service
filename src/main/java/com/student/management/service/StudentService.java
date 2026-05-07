@@ -47,11 +47,11 @@ public class StudentService {
 
         {
             AuditEvent event = AuditEvent.builder()
-                            .name(savedStudent.getName())
-                            .action("CREATE_STUDENT")
-                            .description("Student created successfully")
-                            .createdAt(LocalDateTime.now())
-                            .build();
+                    .name(savedStudent.getName())
+                    .action("CREATE_STUDENT")
+                    .description("Student created successfully")
+                    .createdAt(LocalDateTime.now())
+                    .build();
 
             studentProducer.sendAuditEvent(event);
         }
